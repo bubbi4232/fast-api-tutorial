@@ -1,14 +1,7 @@
-#from typing import Optional
-#from fastapi import FastAPI
 from typing import Optional, List
 from fastapi import FastAPI, Query
 
-def find_min(arr):
-  """ Returns the minimum value of an integer array."""
-  return min(arr)
-
 app = FastAPI()
-
 
 @app.get("/")
 async def root():
